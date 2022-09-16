@@ -40,7 +40,7 @@ const Header = () => {
                 inheritViewBox
               />
             </Box>
-            <Stack direction='row'>
+            <Stack direction='row' spacing='25px'>
               <NotificationButton />
               <ProfileMenuButton />
             </Stack>

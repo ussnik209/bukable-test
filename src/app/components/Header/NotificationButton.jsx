@@ -1,18 +1,12 @@
 import React from 'react'
 
-import {Box, IconButton} from '@mui/material'
+import {SvgIcon, IconButton} from '@mui/material'
 
-const NotificationIconPath = '../../../assets/img/Notification.png'
+import NotificationIcon from '../../../assets/svg/Notification.svg'
 
 const NotificationButton = () => (
-  <IconButton>
-    <Box sx={{
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
-      backgroundImage: 'url(../../../assets/img/Notification.png)',
-      width: '25px',
-      height: '25px'
-    }}></Box>
+  <IconButton className='iconButton'>
+    <SvgIcon viewBox={'0 0 17 20'}  component={NotificationIcon}></SvgIcon>
   </IconButton>
 )
 

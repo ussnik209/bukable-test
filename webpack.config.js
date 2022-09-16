@@ -10,7 +10,7 @@ const ImageMinPlugin = require('imagemin-webpack')
 const isDev = process.env.NODE_ENV === 'development'
 const isProd = !isDev
 
-const distPath = '/public'
+const distPath = 'public'
 const filename = (ext) => isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`
 
 const optimization = () => {
@@ -133,7 +133,7 @@ module.exports = {
         }
       },
       // {
-      //   test: /\.(?:|gif|png|jpg|jpeg|svg)$/i,
+      //   test: /\.(?:|gif|png|jpg|jpeg)$/i,
       //   use: {
       //     loader: 'file-loader',
       //     options: {

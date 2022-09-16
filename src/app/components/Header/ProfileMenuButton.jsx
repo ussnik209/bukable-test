@@ -33,7 +33,7 @@ const ProfileMenuButton = () => {
                 maxHeight: '30px'
               }}
             >
-              <Avatar alt="Avatar" src="../../assets/img/avatar.png" 
+              <Avatar alt="Avatar" src="./assets/img/avatar.png" 
                 sx={{height: '100%', width: '100%'}}
               />
             </Box>
@@ -41,7 +41,7 @@ const ProfileMenuButton = () => {
               sx={{
                 height: '7px',
                 width: '12px',
-                backgroundImage: 'url(../../assets/img/more.png)',
+                backgroundImage: 'url(./assets/img/more.png)',
                 backgroundSize: 'contain',
                 backgroundRepeat: 'no-repeat'
               }}
