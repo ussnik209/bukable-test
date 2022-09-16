@@ -10,7 +10,7 @@ import Chat from '../../../assets/svg/Chat.svg'
 import Home from '../../../assets/svg/Home.svg'
 
 const SideBar = () => {
-  const viewBox = '0 0 -3 18'
+  const viewBox = '0 0 18 18'
   const navigationElements = [
     {
       label: 'Talents',
@@ -53,20 +53,20 @@ const SideBar = () => {
           }
         }
         ]}
-        className='button'
+        className='button button__big'
       >
         Create
       </ButtonWithIconAndLabel>
       <Stack spacing='30px'>
         <ButtonWithIconAndLabel icon={<SvgIcon viewBox={viewBox} component={SearchIcon} />}
-          className='button navButton selectedNavButton'
+          className='button navButton selectedNavButton button__big'
         >
           Talents
         </ButtonWithIconAndLabel>
         {
           navigationElements.slice(1).map(((navItem, index) => 
             <ButtonWithIconAndLabel key={index} icon={<SvgIcon viewBox={viewBox} component={navItem.icon} />}
-              className='button navButton'
+              className='button navButton button__big'
             >
               {navItem.label}
             </ButtonWithIconAndLabel>

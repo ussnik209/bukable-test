@@ -1,9 +1,39 @@
-@import "~normalize.css";
+@import '~normalize.css';
 
 $contrastColor: #9a05eb;
+$mainFont: 'Source Sans Pro', sans-serif;
+$smallFontSize: 8px;
 
 .round {
   border-radius: 50%;
+}
+
+button.button {
+  font-family: $mainFont;
+}
+
+a.link {
+  font-family: $mainFont;
+  font-size: $smallFontSize;
+  color: #fff;
+}
+
+p.simpleText {
+  font-family: $mainFont;
+  color: #fff;
+}
+
+p.simpleText__small {
+  font-size: $smallFontSize;
+  line-height: 28px;
+}
+
+button.iconButton__social {
+  background-color: #fff;
+  padding: 2px;
+  width: 20px;
+  height: 20px;
+  box-sizing: content-box;
 }
 
 button.navButton {
@@ -20,4 +50,9 @@ button.selectedNavButton {
   border-radius: 8px;
   background-color: #fff;
   color: $contrastColor;
+}
+
+button.button__big {
+  line-height: 28px;
+  font-size: 14px;
 }
