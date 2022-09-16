@@ -1,5 +1,23 @@
 @import "~normalize.css";
 
+$contrastColor: #9a05eb;
+
 .round {
   border-radius: 50%;
+}
+
+button.navButton {
+  color: #fff;
+  text-align: start;
+  //mui library button centering adjustment
+  justify-content: start;
+  &:hover {
+    background-color: rgba($color: #fff, $alpha: .5)
+  }
+}
+
+button.selectedNavButton {
+  border-radius: 8px;
+  background-color: #fff;
+  color: $contrastColor;
 }

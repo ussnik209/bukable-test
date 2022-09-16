@@ -1,23 +1,27 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
-import { Container, Grid } from '@mui/material'
+import { Container, Box, useTheme, Stack } from '@mui/material'
 
-import Header from './Header/Header.jsx'
+import Header from './header/Header.jsx'
+import SideBar from './SideBar/SideBar.jsx'
 
-const Layout = () => (
-  <Grid container spacing={2}>
-    <Grid item xs={12}>
+const Layout = () => {
+  const theme = useTheme()
+  return (
+    <Box sx={{backgroundColor: theme.palette.primary.dark}}>
       <Header></Header>
-    </Grid>
-    <Grid item xs={4}></Grid>
-    <Grid item xs={8}>
-      <Container maxWidth='md' className='content'>
-        {/* <Outlet /> */}
-        content
+      <Container maxWidth='1440px'>
+        <Stack direction='row'>
+          <SideBar></SideBar>
+          <Container maxWidth='md' className='content'>
+            {/* <Outlet /> */}
+            content
+          </Container>
+        </Stack>
       </Container>
-    </Grid>
-  </Grid>
+    </Box>
 )
+}
 
 export default Layout
